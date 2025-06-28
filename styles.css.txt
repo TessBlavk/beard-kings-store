@@ -1,0 +1,144 @@
+/* Root Variables — Easily switch palettes by editing these */
+:root {
+  --clr-bg: #0D1B2A;           /* Deep Navy */
+  --clr-secondary: #42526E;    /* Steel Blue */
+  --clr-text: #FFFFFF;         /* White */
+  --clr-accent: #D4AF37;       /* Gold */
+  --clr-gray: #6C757D;         /* Gray for alt text */
+}
+
+/* Base Styles */
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: 'Lora', serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+a {
+  color: var(--clr-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+/* Header & Footer */
+header, footer {
+  background-color: var(--clr-secondary);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--clr-gray);
+}
+
+/* Button Style */
+.btn-accent,
+button,
+input[type="submit"],
+a.button {
+  background-color: var(--clr-accent);
+  color: var(--clr-text);
+  border: none;
+  padding: 0.75em 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-accent:hover,
+button:hover,
+a.button:hover {
+  background-color: #b7982f; /* Slightly darker gold */
+}
+
+/* Section Layout */
+section {
+  padding: 4rem 1rem;
+}
+
+section#shop .product {
+  margin-bottom: 3rem;
+}
+
+/* Product Image */
+.product img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Blockquote Style */
+blockquote {
+  border-left: 4px solid var(--clr-accent);
+  margin: 2rem 0;
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--clr-text);
+}
+
+/* Forms */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin: 0.5em 0;
+  border: 1px solid var(--clr-gray);
+  border-radius: 4px;
+  background-color: var(--clr-secondary);
+  color: var(--clr-text);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--clr-gray);
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: var(--clr-text);
+  font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+  
+  section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Utility Classes */
+.text-secondary {
+  color: var(--clr-gray);
+}
+
+.bg-accent {
+  background-color: var(--clr-accent);
+  color: var(--clr-text);
+  padding: 0.5em;
+  display: inline-block;
+  border-radius: 3px;
+}
