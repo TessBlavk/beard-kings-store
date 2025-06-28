@@ -1,1 +1,1 @@
-# beard-kings-store
+# Beard Kings-store
